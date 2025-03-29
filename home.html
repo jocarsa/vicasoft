@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>{titulo}</title>
+		<meta charset="utf-8">
+		<meta name="description" content="{descripcion}">
+		<meta name="keywords" content="{palabrasclave}">
+		<meta name="robots" content="{robots}">
+		<meta name="autor" content="{autor}">
+		<meta name="viewport" content="{visor}">
+		<meta name="referrer" content="{referidor}">
+		<meta http-equiv="Content-Security-Policy" content="{seguridad}">
+		<meta property="og:title" content="{titulo}">
+		<meta property="og:description" content="{descripcion}">
+		<meta property="og:image" content="{imagen}">
+		<meta property="og:url" content="{url}">
+		<meta property="og:type" content="{tipo}">
+		<link rel="icon" href="{icono}" type="image/x-icon">
+		<link rel="apple-touch-icon" href="{iconomovil}">
+		<link rel="stylesheet" href="{estilo}">
+	</head>
+	<body>
+		<header>
+			<img src="{logo}">
+			<h1>{titulo}</h1>
+			<h2>{subtitulo}</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="{enlace1}">{menu1}</a></li>
+				<li><a href="{enlace2}">{menu2}</a></li>
+				<li><a href="{enlace3}">{menu3}</a></li>
+				<li><a href="{enlace4}">{menu4}</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<h3>{tituloheroe}</h3>
+				<p>{textoheroe}</p>
+			</section>
+			<section>
+				<h3>{titulocaracteristicas}</h3>
+				<div>
+					<article>
+						<h4>{titulocaracteristica1}</h4>
+						<p>{textocaracteristica1}</p>
+					</article>
+					<article>
+						<h4>{titulocaracteristica2}</h4>
+						<p>{textocaracteristica2}</p>
+					</article>
+					<article>
+						<h4>{titulocaracteristica3}</h4>
+						<p>{textocaracteristica3}</p>
+					</article>
+					<article>
+						<h4>{titulocaracteristica4}</h4>
+						<p>{textocaracteristica4}</p>
+					</article>
+					<article>
+						<h4>{titulocaracteristica5}</h4>
+						<p>{textocaracteristica5}</p>
+					</article>
+					<article>
+						<h4>{titulocaracteristica6}</h4>
+						<p>{textocaracteristica6}</p>
+					</article>
+				</div>
+			</section>
+			<section>
+				<h3>{titulobeneficios}</h3>
+				<ul>
+					<li><p><span>{destacado1}:</span>{texto1}</p></li>
+					<li><p><span>{destacado2}:</span>{texto2}</p></li>
+					<li><p><span>{destacado3}:</span>{texto3}</p></li>
+					<li><p><span>{destacado4}:</span>{texto4}</p></li>
+				</ul>
+			</section>
+			<section>
+				<h3>{titulodemostracion}</h3>
+				<p>{textodemostracion}</p>
+				<video src="{videodemostracion}"></video>
+			</section>
+			<section>
+				<h3>{tituloprecios}</h3>
+				<div>
+					<article>
+						<h4>{plan1}</h4>
+						<p>{precio1}</p>
+						<p>{funcionalidades1}</p>
+					</article>
+					<article>
+						<h4>{plan2}</h4>
+						<p>{precio2}</p>
+						<p>{funcionalidades2}</p>
+					</article>
+					<article>
+						<h4>{plan3}</h4>
+						<p>{precio3}</p>
+						<p>{funcionalidades3}</p>
+					</article>
+				</div>
+			</section>
+			<section>
+				<h3>{titulocontacto}</h3>
+				<p>{textocontacto}</p>
+				<form method="POST" action="?">
+					<label>Nombre</label>
+					<input type="text" name="nombre">
+					<label>Correo electrónico:</label>
+					<input type="email" name="email">
+					<label>Mensaje:</label>
+					<textarea name="mensaje"></textarea>
+					<input type="submit">
+				</form>
+			</section>
+		</main>
+		<footer>
+			(c) 2025 {autor}
+		</footer>
+		<style>
+			/* Reset y estilos generales */
+			*{
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+			}
+			body{
+				text-align:center;
+				font-family:sans-serif;
+			}
+			section{
+				padding:20px;
+			}
+			h3{
+				padding:20px;
+			}
+			/* Cabecera */
+			header{
+				background:grey;
+				color:white;
+				padding:20px;
+			}
+			/* Menú de navegación */
+			nav{
+				background:lightgrey;
+				padding:20px;
+			}
+			nav ul{
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				list-style-type:none;
+			}
+			nav ul li{
+				padding:20px;
+			}
+			nav ul li a{
+				text-decoration:none;
+				color:inherit;
+			}
+			/* heroe */
+			section:nth-child(odd){
+				background:gainsboro;
+			}
+			section:nth-child(even){
+				background:ghostwhite;
+			}
+			section:nth-child(1){
+				height:300px;
+				background:grey;
+				color:white;
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			section div{
+				width:800px;
+				margin:auto;
+				display: grid;
+				grid-template-columns: auto auto auto;
+				gap:20px;
+			}
+			section div article{
+				border:1px solid gainsboro;
+				padding:20px;
+				height:200px;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+				align-content: stretch;
+			}
+			section ul{
+				width:800px;
+				margin:auto;
+				text-align:left;
+				list-style-type:none;
+			}
+			section form{
+				width:500px;
+				margin:auto;
+				text-align:left;
+			}
+			section form input,section form textarea{
+				width:100%;
+				border:1px solid gainsboro;
+				padding:10px;
+				margin:10px;
+			}
+			footer{
+				background:grey;
+				color:white;
+				padding:20px;
+			}
+		</style>
+	</body>
+</html>
